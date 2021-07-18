@@ -1,0 +1,22 @@
+[package]
+name = "kvs"
+version = "0.1.0"
+edition = "2018"
+authors = ["zlcatwu <zlcatwu@163.com>"]
+description = "A key value database"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "2.33.3"
+structopt = { version = "0.3.22" }
+failure = "0.1.8"
+failure_derive = "0.1.8"
+ron = "0.6.4"
+serde = { version = "1.0.126", features = ["derive"] }
+
+[dev-dependencies]
+assert_cmd = "1.0.7"
+tempfile = "3.2.0"
+predicates = "2.0.0"
+walkdir = "2.3.2"
